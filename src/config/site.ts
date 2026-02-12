@@ -5,6 +5,9 @@ export const SITE = {
   phoneNumber: '905465037450',
   phoneDisplay: '0546 503 74 50',
   gtmId: 'GTM-5QTQ3DGV',
+  social: {
+    instagram: 'https://www.instagram.com/',
+  },
   footerNav: {
     programs: [
       { label: 'LGS Matematik Özel Ders', href: '/lgs-matematik-ozel-ders' },
@@ -22,14 +25,10 @@ export const SITE = {
     ],
     corporate: [
       { label: 'Hakkımda', href: '/hakkimda' },
+      { label: 'Programlar', href: '/programlar' },
       { label: 'Yorumlar', href: '/yorumlar' },
       { label: 'İletişim', href: '/iletisim' },
-      { label: 'KVKK', href: '/kvkk' },
     ],
-  },
-  social: {
-    instagram: 'https://www.instagram.com/',
-    youtube: 'https://www.youtube.com/',
   },
 } as const;
 
