@@ -2,7 +2,35 @@
 export const SITE = {
   domain: 'https://ahmatematik.com',
   whatsappNumber: '905465037450',
+  phoneNumber: '905465037450',
+  phoneDisplay: '0546 503 74 50',
   gtmId: 'GTM-5QTQ3DGV',
+  footerNav: {
+    programs: [
+      { label: 'LGS Matematik Özel Ders', href: '/lgs-matematik-ozel-ders' },
+      { label: 'TYT Matematik Özel Ders', href: '/tyt-matematik-ozel-ders' },
+      { label: 'AYT Matematik Özel Ders', href: '/ayt-matematik-ozel-ders' },
+      { label: 'Online Matematik Özel Ders', href: '/online-matematik-ozel-ders' },
+      { label: 'Ankara Matematik Özel Ders', href: '/ankara-matematik-ozel-ders' },
+    ],
+    content: [
+      { label: 'Matematik Köşesi', href: '/matematik-kosesi' },
+      { label: 'Yeni Nesil Sorular', href: '/yeni-nesil-sorular' },
+      { label: 'Matematik Korkusu', href: '/matematik-korkusu' },
+      { label: 'Ders Çalışma Programı', href: '/ders-calisma-programi' },
+      { label: 'Sınav Motivasyonu', href: '/sinav-motivasyonu' },
+    ],
+    corporate: [
+      { label: 'Hakkımda', href: '/hakkimda' },
+      { label: 'Yorumlar', href: '/yorumlar' },
+      { label: 'İletişim', href: '/iletisim' },
+      { label: 'KVKK', href: '/kvkk' },
+    ],
+  },
+  social: {
+    instagram: 'https://www.instagram.com/',
+    youtube: 'https://www.youtube.com/',
+  },
 } as const;
 
 export function getWhatsAppLink(number: string): string {
