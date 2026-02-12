@@ -1,0 +1,21 @@
+---
+import Logo from '../assets/images/logo.svg';
+import { SITE, getWhatsAppLink } from '../config/site';
+import { COPY_TR } from '../config/copy.tr';
+
+const whatsappLink = getWhatsAppLink(SITE.whatsappNumber);
+---
+<header class="sticky top-0 z-40 w-full border-b border-slate-200 bg-white/80 backdrop-blur">
+  <div class="mx-auto max-w-screen-md px-4 py-3 flex items-center justify-between">
+    <a href="/" aria-label={COPY_TR.header.homeAria} class="flex items-center gap-2">
+      <Logo class="w-9 h-9" />
+      <span class="text-sm font-semibold tracking-tight text-slate-900">AH Matematik</span>
+      <span class="ml-2 hidden sm:inline-flex items-center rounded-full border border-slate-200 bg-white px-2.5 py-1 text-xs font-semibold text-slate-700">
+        LGS • TYT • AYT
+      </span>
+    </a>
+    <a class="inline-flex items-center justify-center rounded-xl bg-emerald-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
+      WhatsApp ile Yaz
+    </a>
+  </div>
+</header>

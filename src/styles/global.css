@@ -1,0 +1,44 @@
+/* src/styles/global.css */
+@import "tailwindcss";
+
+:root{
+  --bg: 255 255 255;
+  --fg: 15 23 42;         /* slate-900 */
+  --muted: 71 85 105;     /* slate-600 */
+  --card: 255 255 255;
+  --border: 226 232 240;  /* slate-200 */
+  --accent: 5 150 105;    /* emerald-600 */
+}
+
+html, body { height: 100%; }
+
+body{
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+    "Apple Color Emoji","Segoe UI Emoji";
+  background: rgb(var(--bg));
+  color: rgb(var(--fg));
+}
+
+/* Çok hafif premium arkaplan dokusu (Zero-JS, dış bağımlılık yok) */
+.bg-premium {
+  background:
+    radial-gradient(1200px 600px at 20% -10%, rgba(16,185,129,0.12), transparent 55%),
+    radial-gradient(900px 500px at 110% 10%, rgba(59,130,246,0.10), transparent 55%),
+    linear-gradient(to bottom, rgba(2,6,23,0.02), transparent 40%);
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(15,23,42,0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15,23,42,0.04) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: radial-gradient(circle at 20% 0%, black 0%, transparent 65%);
+}
+
+/* Kart dili */
+.card {
+  @apply rounded-2xl border border-slate-200 bg-white shadow-sm;
+}
+.card-hover {
+  @apply transition hover:-translate-y-0.5 hover:shadow-md;
+}

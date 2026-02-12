@@ -1,0 +1,46 @@
+---
+import { Image } from 'astro:assets';
+import ayse from '../assets/images/testimonial-ayse.webp';
+import ege from '../assets/images/testimonial-ege.webp';
+---
+<section class="bg-white">
+  <div class="mx-auto max-w-screen-md px-4 pb-8">
+    <div class="grid gap-3 sm:grid-cols-2">
+      <!-- Ayşe -->
+      <article class="card card-hover p-5">
+        <div class="flex items-center gap-3">
+          <div class="h-12 w-12 overflow-hidden rounded-full border border-slate-200 bg-slate-50 ring-2 ring-emerald-100">
+            <Image src={ayse} alt="Ayşe Hanım" width={80} height={80} format="webp" quality={80} class="h-full w-full object-cover" />
+          </div>
+          <div>
+            <p class="text-sm font-semibold text-slate-900">Ayşe Hanım</p>
+            <p class="text-xs text-slate-500">Veli</p>
+          </div>
+        </div>
+        <p class="mt-4 text-sm leading-relaxed text-slate-700">
+          <span class="mr-1 text-emerald-600 font-black">“</span>
+          Dersler planlı ilerledi, takip kısmı bizi rahatlattı. Süreci net görmek güven verdi.
+          <span class="ml-1 text-emerald-600 font-black">”</span>
+        </p>
+      </article>
+
+      <!-- Ege -->
+      <article class="card card-hover p-5">
+        <div class="flex items-center gap-3">
+          <div class="h-12 w-12 overflow-hidden rounded-full border border-slate-200 bg-slate-50 ring-2 ring-emerald-100">
+            <Image src={ege} alt="Ege" width={80} height={80} format="webp" quality={80} class="h-full w-full object-cover" />
+          </div>
+          <div>
+            <p class="text-sm font-semibold text-slate-900">Ege</p>
+            <p class="text-xs text-slate-500">Öğrenci</p>
+          </div>
+        </div>
+        <p class="mt-4 text-sm leading-relaxed text-slate-700">
+          <span class="mr-1 text-emerald-600 font-black">“</span>
+          Ne çalışacağımı biliyorum. Denemelerde yanlışlarımın nedenini anlayıp düzelttik.
+          <span class="ml-1 text-emerald-600 font-black">”</span>
+        </p>
+      </article>
+    </div>
+  </div>
+</section>

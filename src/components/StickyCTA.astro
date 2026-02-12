@@ -1,0 +1,31 @@
+---
+import { SITE, getWhatsAppLink, getTelLink } from '../config/site';
+const whatsappLink = getWhatsAppLink(SITE.whatsappNumber);
+const telLink = getTelLink(SITE.whatsappNumber);
+---
+<!-- Mobil sticky CTA (sadece small ekran) -->
+<div class="fixed inset-x-0 bottom-0 z-50 sm:hidden">
+  <div class="mx-auto max-w-screen-md px-4 pb-[max(env(safe-area-inset-bottom),12px)] pt-3">
+    <div class="rounded-2xl border border-slate-200 bg-white/85 backdrop-blur shadow-lg p-2 grid grid-cols-2 gap-2">
+      <a
+        href={whatsappLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        data-cta="whatsapp"
+        data-cta-loc="sticky"
+        class="... rounded-xl py-3.5 font-extrabold"
+      >
+        WhatsApp
+      </a>
+
+      <a
+        href={telLink}
+        data-cta="phone"
+        data-cta-loc="sticky"
+        class="... rounded-xl py-3.5 font-extrabold"
+      >
+        Ara
+      </a>
+    </div>
+  </div>
+</div>

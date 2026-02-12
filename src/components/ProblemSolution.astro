@@ -1,0 +1,32 @@
+---
+import { COPY_TR } from '../config/copy.tr';
+const ps = COPY_TR.problemSolution;
+---
+<section class="bg-white">
+  <div class="mx-auto max-w-screen-md px-4 py-8">
+    <h2 class="text-xl font-extrabold tracking-tight text-slate-900">
+      {ps.title}
+    </h2>
+
+    <div class="mt-4 grid gap-3 sm:grid-cols-3">
+      {ps.cards.map((c) => (
+        <article class="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+          <h3 class="text-sm font-bold text-slate-900">{c.title}</h3>
+          <p class="mt-2 text-sm leading-relaxed text-slate-700">{c.desc}</p>
+        </article>
+      ))}
+    </div>
+
+    <div class="mt-6 rounded-xl border border-emerald-200 bg-emerald-50 p-4">
+      <h3 class="text-sm font-bold text-emerald-900">{ps.solutionTitle}</h3>
+      <ul class="mt-2 space-y-2 text-sm text-emerald-900/90">
+        {ps.solutionBullets.map((b) => (
+          <li class="flex items-start gap-2">
+            <span class="mt-1 inline-block h-2 w-2 shrink-0 rounded-full bg-emerald-600" aria-hidden="true" />
+            <span>{b}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</section>
