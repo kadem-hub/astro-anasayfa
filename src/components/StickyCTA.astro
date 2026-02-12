@@ -11,18 +11,24 @@ const telLink = getTelLink(SITE.whatsappNumber);
         href={whatsappLink}
         target="_blank"
         rel="noopener noreferrer"
-        data-cta="whatsapp"
-        data-cta-loc="sticky"
-        class="... rounded-xl py-3.5 font-extrabold"
+        data-event="conversion"
+        data-category="whatsapp"
+        data-action="click"
+        data-label="sticky_whatsapp_primary"
+        class="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-600 px-4 py-3.5 text-sm font-extrabold text-white shadow-sm transition hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
+        aria-label="WhatsApp ile yaz"
       >
         WhatsApp
       </a>
 
       <a
         href={telLink}
-        data-cta="phone"
-        data-cta-loc="sticky"
-        class="... rounded-xl py-3.5 font-extrabold"
+        data-event="conversion"
+        data-category="phone"
+        data-action="click"
+        data-label="sticky_phone_secondary"
+        class="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-4 py-3.5 text-sm font-extrabold text-slate-900 shadow-sm transition hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-300 focus:ring-offset-2"
+        aria-label="Telefonla ara"
       >
         Ara
       </a>

@@ -43,14 +43,24 @@ const copy = COPY_TR.hero;
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
+            data-event="conversion"
+            data-category="whatsapp"
+            data-action="click"
+            data-label="hero_whatsapp_primary"
             class="inline-flex w-full items-center justify-center rounded-2xl bg-emerald-600 px-5 py-4 text-sm font-extrabold text-white shadow-sm transition hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
+            aria-label="WhatsApp ile yaz"
           >
             {copy.ctaPrimary}
           </a>
 
           <a
             href={telLink}
+            data-event="conversion"
+            data-category="phone"
+            data-action="click"
+            data-label="hero_phone_secondary"
             class="inline-flex w-full items-center justify-center rounded-2xl border border-slate-300 bg-white px-5 py-4 text-sm font-extrabold text-slate-900 shadow-sm transition hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-300 focus:ring-offset-2"
+            aria-label="Telefonla ara"
           >
             {copy.ctaSecondary}
           </a>
